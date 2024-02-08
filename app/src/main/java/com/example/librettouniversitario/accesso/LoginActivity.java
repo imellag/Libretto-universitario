@@ -76,7 +76,7 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(new Intent(this, MainActivity.class));
             finish();
         } else {
-            Toast.makeText(this, "Login fallito. Per favore, controlla le tue credenziali.", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Login fallito. Per favore, controlla le tue credenziali o crea un account se non lo hai ancora fatto.", Toast.LENGTH_LONG).show();
         }
     }
 }
