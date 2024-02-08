@@ -1,0 +1,41 @@
+<resources>
+    <!-- Titoli e testi generici -->
+    <string name="app_name">Libretto universitario</string>
+    <string name="titolo_form">Inserisci i tuoi dati</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Registrazione</string>
+    <string name="error">Errore</string>
+    <string name="confirm">Conferma</string>
+    <string name="access">Accedi</string>
+    <string name="register">Registrati</string>
+    <string name="new_account">Non hai un account? Crealo qui!</string>
+    <string name="back_to_access">Hai già un account? Accedi!</string>
+    <string name="birthdate_confirm">OK</string>
+    <string name="birthdate_revert">Annulla</string>
+    <string name="profile_button">Go to profile</string>
+    <string name="salva">Salva</string>
+    <string name="elimina">Elimina</string>
+    <string name="indietro">Torna indietro</string>
+
+    <string name="name_hint">Nome</string>
+    <string name="surname_hint">Cognome</string>
+    <string name="birthdate_hint">Data di nascita</string>
+    <string name="password_hint">Password</string>
+    <string name="nome_esame">Nome esame</string>
+    <string name="voto_esame">Voto esame</string>
+
+    <string name="CFU">CFU</string>
+    <string name="voto">Voto</string>
+    <string name="add_exam">Aggiungi un esame</string>
+    <string name="average_calculator">Calcola la media</string>
+    <string name="voto_laurea">Calcola il voto di laurea</string>
+    <string name="i_tuoi_esami">I tuoi esami</string>
+    <string name="tv_voto_di_laurea_previsto">Voto di laurea previsto:</string>
+    <string name="media">Media</string>
+    <string name="media_ponderata">Media Ponderata</string>
+    <string name="media_aritmetica">Media Aritmetica</string>
+
+    <string name="voto_di_laurea_previsto">Voto di laurea previsto: %.2f</string>
+    <string name="trattino">-</string>
+    <string name="logout">Logout</string>
+</resources>
