@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements ExamAdapter.OnExa
     private void aggiornaProgressBar() {
         double mediaPonderata = calcolaMediaPonderata();
         double votoLaurea = (mediaPonderata * 110) / 30;
-        int progressValue = (int) ((votoLaurea - 18) / (31 - 18) * 100);
+        int progressValue = (int) ((votoLaurea * 100) / 110);
         horizontalProgressBar.setProgress(progressValue);
         tvVotoLaurea.setText(getString(R.string.voto_di_laurea_previsto, votoLaurea));
     }
