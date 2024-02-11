@@ -37,28 +37,31 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private boolean validateInput() {
+        boolean isValid = true;
+
         String username = etName.getText().toString().trim();
         String password = etPassword.getText().toString().trim();
 
         if (username.isEmpty()) {
             etName.setError("Inserisci un nome!");
-            return false;
+            isValid = false;
         } else {
             etName.setError(null);
         }
 
         if (password.isEmpty()) {
             etPassword.setError("Inserisci una password!");
-            return false;
+            isValid = false;
         } else if (password.length() < 6) {
             etPassword.setError("La password deve avere almeno 6 caratteri!");
-            return false;
+            isValid = false;
         } else {
             etPassword.setError(null);
         }
 
-        return true;
+        return isValid;
     }
+
 
     private boolean validateCredentials(String username, String password) {
         SharedPreferences sharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE);

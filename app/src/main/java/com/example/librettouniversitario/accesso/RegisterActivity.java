@@ -124,6 +124,8 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     protected boolean checkInput() {
+        boolean isValid = true;
+
         String name = etName.getText().toString().trim();
         String surname = etSurname.getText().toString().trim();
         String birthdate = calendarBirthdate.getText().toString().trim();
@@ -131,35 +133,35 @@ public class RegisterActivity extends AppCompatActivity {
 
         if (name.isEmpty()) {
             etName.setError("Inserisci un nome!");
-            return false;
+            isValid = false;
         } else {
             etName.setError(null);
         }
 
         if (surname.isEmpty()) {
             etSurname.setError("Inserisci un cognome!");
-            return false;
+            isValid = false;
         } else {
             etSurname.setError(null);
         }
 
         if (birthdate.isEmpty()) {
             calendarBirthdate.setError("Inserisci una data!");
-            return false;
+            isValid = false;
         } else {
             calendarBirthdate.setError(null);
         }
 
         if (password.isEmpty()) {
             etPassword.setError("Inserisci una password!");
-            return false;
+            isValid = false;
         } else if (password.length() < 6) {
             etPassword.setError("La password deve avere almeno 6 caratteri!");
-            return false;
+            isValid = false;
         } else {
             etPassword.setError(null);
         }
 
-        return true;
+        return isValid;
     }
 }
